@@ -1,0 +1,3 @@
+import { CheckCircle2, ArrowLeft } from 'lucide-react'
+import './style.css'
+export default function Obrigado(){return <main className="privacy-page"><div className="section-kicker">MENSAGEM ENVIADA <span>✳</span></div><h1>Obrigado pela <em>confiança.</em></h1><p>Recebemos sua solicitação. A equipe poderá retornar pelo telefone informado.</p><a className="button button-dark" href="/"><ArrowLeft size={16}/> Voltar ao início</a></main>}
