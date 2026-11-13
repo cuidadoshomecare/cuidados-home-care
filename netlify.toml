@@ -1,0 +1,23 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/about/"
+  to = "/sobre/"
+  status = 301
+
+[[redirects]]
+  from = "/services/"
+  to = "/servicos/"
+  status = 301
+
+[[redirects]]
+  from = "/appointment/"
+  to = "/contato/"
+  status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
