@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, HeartHandshake, Menu, X, MessageCircle, MapPin, Phone, Mail } from 'lucide-react'
+import { ArrowRight, HeartHandshake, Menu, X, MessageCircle } from 'lucide-react'
 import './style.css'
 export function SiteLayout({children}:{children:React.ReactNode}) {
  const [open,setOpen]=React.useState(false)
