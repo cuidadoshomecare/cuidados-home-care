@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Phone, Mail, MapPin, MessageCircle, BriefcaseBusiness, HeartHandshake } from 'lucide-react'
+import { ArrowRight, Phone, Mail, MapPin, BriefcaseBusiness, HeartHandshake } from 'lucide-react'
 import { SiteLayout,PageHero } from './SiteLayout'
 const phone='5511982339558'
 function sendWhatsApp(e:React.FormEvent<HTMLFormElement>,kind:string){e.preventDefault();const data=new FormData(e.currentTarget);const lines=Array.from(data.entries()).filter(([k])=>k!=='').map(([k,v])=>k+': '+v);const msg='Olá! Vim pelo site Cuidados Home Care. '+kind+'\n'+lines.join('\n');window.open('https://wa.me/'+phone+'?text='+encodeURIComponent(msg),'_blank','noopener,noreferrer')}
