@@ -22,7 +22,7 @@ function App() {
       <a className="brand" href="#inicio" onClick={closeMenu}><span className="brand-mark"><HeartHandshake size={23}/></span><span>cuidados<span className="brand-light">home care</span></span></a>
       <button className="mobile-toggle" aria-label="Abrir menu" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X/> : <Menu/>}</button>
       <nav className={menuOpen ? 'nav nav-open' : 'nav'}>
-        <a href="/" onClick={closeMenu}>Início</a><a href="/sobre/" onClick={closeMenu}>Sobre nós</a><a href="/servicos/" onClick={closeMenu}>Serviços</a><a href="/contato/" onClick={closeMenu}>Contato</a><a className="nav-cta" href="/contato/#profissionais" onClick={closeMenu}>Trabalhe conosco <ArrowRight size={16}/></a>
+        <a href="/" onClick={closeMenu}>Início</a><a href="/sobre/" onClick={closeMenu}>Sobre nós</a><a href="/servicos/" onClick={closeMenu}>Serviços</a><a href="/contato/" onClick={closeMenu}>Contato</a>
       </nav>
     </header>
     <main>
@@ -56,7 +56,7 @@ function App() {
       </section>
     <section className="review-strip"><div><h2>Já conhece nosso trabalho?</h2><p>Se você já teve uma experiência com a Cuidados Home Care, conte como foi no Google.</p></div><a className="button button-outline" href="https://g.page/r/CU0YzKfzqObPEBM/review" target="_blank" rel="noreferrer"><Star size={17}/> Avaliar no Google <ArrowRight size={17}/></a></section>
     </main>
-    <footer className="footer"><div className="footer-main"><a className="brand brand-footer" href="#inicio"><span className="brand-mark"><HeartHandshake size={22}/></span><span>cuidados<span className="brand-light">home care</span></span></a><p>Cuidado domiciliar com acolhimento, respeito e atenção à individualidade.</p><a className="footer-top" href="#inicio">Voltar ao topo ↑</a></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Cuidados Home Care. Todos os direitos reservados.</span><a href="/privacidade/">Privacidade</a><a href="https://g.page/r/CU0YzKfzqObPEBM/review" target="_blank" rel="noreferrer">Avalie no Google</a><span>Informações institucionais sujeitas à confirmação pela equipe.</span></div></footer>
+    <footer className="footer"><div className="footer-main"><a className="brand brand-footer" href="#inicio"><span className="brand-mark"><HeartHandshake size={22}/></span><span>cuidados<span className="brand-light">home care</span></span></a><p>Cuidado domiciliar com acolhimento, respeito e atenção à individualidade.</p><a className="footer-top" href="#inicio">Voltar ao topo ↑</a></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Cuidados Home Care. Todos os direitos reservados.</span><a href="/privacidade/">Privacidade</a><a href="https://g.page/r/CU0YzKfzqObPEBM/review" target="_blank" rel="noreferrer">Avalie no Google</a><a className="footer-partner-link" href="/profissionais/">Área de profissionais</a><span>Informações institucionais sujeitas à confirmação pela equipe.</span></div></footer>
     <a className="whatsapp-float" href="https://wa.me/5511982339558" target="_blank" rel="noreferrer" aria-label="Conversar pelo WhatsApp"><MessageCircle size={22}/><span>Fale com a gente</span></a>
   </div>
 }
