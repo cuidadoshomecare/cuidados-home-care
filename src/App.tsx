@@ -22,7 +22,7 @@ function App() {
       <a className="brand" href="#inicio" onClick={closeMenu}><span className="brand-mark"><HeartHandshake size={23}/></span><span>cuidados<span className="brand-light">home care</span></span></a>
       <button className="mobile-toggle" aria-label="Abrir menu" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X/> : <Menu/>}</button>
       <nav className={menuOpen ? 'nav nav-open' : 'nav'}>
-        <a href="#inicio" onClick={closeMenu}>Início</a><a href="#sobre" onClick={closeMenu}>Sobre nós</a><a href="#servicos" onClick={closeMenu}>Serviços</a><a href="#duvidas" onClick={closeMenu}>Dúvidas</a><a className="nav-cta" href="#contato" onClick={closeMenu}>Fale com a equipe <ArrowRight size={16}/></a>
+        <a href="/" onClick={closeMenu}>Início</a><a href="/sobre/" onClick={closeMenu}>Sobre nós</a><a href="/servicos/" onClick={closeMenu}>Serviços</a><a href="/contato/" onClick={closeMenu}>Contato</a><a className="nav-cta" href="/contato/#profissionais" onClick={closeMenu}>Trabalhe conosco <ArrowRight size={16}/></a>
       </nav>
     </header>
     <main>
